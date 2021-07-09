@@ -14,7 +14,7 @@
  */
 package com.gmail.filoghost.holographicdisplays.object.line;
 
-import org.apache.commons.lang.ArrayUtils;
+import org.apache.commons.lang3.ArrayUtils;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.inventory.ItemStack;

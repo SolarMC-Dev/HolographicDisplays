@@ -187,6 +187,16 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	<!-- Solar: add commons-lang 3 -->
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.12.0</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	<!-- Solar end -->
 
 	<build>
 		<defaultGoal>clean package</defaultGoal>
