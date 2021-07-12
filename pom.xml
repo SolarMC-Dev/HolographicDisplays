@@ -3,6 +3,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<!-- Solar start -->
+	<parent>
+		<groupId>gg.solarmc</groupId>
+		<artifactId>solar-parent</artifactId>
+		<version>0.6.1</version>
+	</parent>
+	<!-- Solar end -->
+
 	<groupId>com.gmail.filoghost.holographicdisplays</groupId>
 	<artifactId>holographicdisplays-parent</artifactId>
 	<name>HolographicDisplays Parent</name>
@@ -18,17 +26,6 @@
 		<java.module-name>com.gmail.filoghost.holographicdisplays</java.module-name> <!-- Solar -->
 	</properties>
 
-	<distributionManagement>
-		<snapshotRepository>
-			<id>codemc-snapshots</id>
-			<url>https://repo.codemc.io/repository/maven-snapshots/</url>
-		</snapshotRepository>
-		<repository>
-			<id>codemc-releases</id>
-			<url>https://repo.codemc.io/repository/maven-releases/</url>
-		</repository>
-	</distributionManagement>
-
 	<modules>
 		<module>API</module>
 		<module>Utils</module>
@@ -36,7 +33,7 @@
 		<module>Legacy</module>
 		<module>NMS</module>
 		<module>Plugin</module>
-		<module>Example</module>
+<!--		<module>Example</module> Solar: don't deploy examples -->
 	</modules>
 	
 	<dependencyManagement>
@@ -308,4 +305,13 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<!-- Solar start -->
+	<repositories>
+		<repository>
+			<id>solar-releases</id>
+			<url>https://mvn-repo.solarmc.gg/releases</url>
+		</repository>
+	</repositories>
+	<!-- Solar end -->
 </project>
